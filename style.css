@@ -1,0 +1,22 @@
+/* Feuille de styles CSS */
+h1
+{
+  color:red; 
+  font-size:2em;
+}
+
+.imagecupcake
+{
+  float:center;
+}
+
+.liste
+{
+	border: solid maroon;
+	box-shadow: 1,1;
+}
+
+a:hover
+{
+	font-weight:bold;
+}
