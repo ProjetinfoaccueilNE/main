@@ -1,26 +1,72 @@
-#menu_nav
-{
-	background-color: rgba(150,150,150,0.2);
+body {
+  margin: 0; 
+  padding: 0;
 }
-.menu
-{
-  border: solid blue 1px;
-	display: table;
-	width: 100%;
+/* Menu */
+.nav ul {
+  list-style: none;
+  background-color: rgb(155,0,0); /*couleur du menu*/
+  text-align: center;
+  padding: 0;
+  margin: 0;
 }
-.menu li
-{
-	width:20%;
-	display: table-cell;
-	text-align: center;
-	border: solid red 1px;
+
+/* Onglets principaux et sous-onglets*/
+.nav li {
+  font-family: 'Oswald', sans-serif;
+  font-size: 1.2em;
+  text-align: left; /*Justification*/
+  width: 200px; /*Taille des onglets*/
+  height: 50px; /*Hauteur du menu*/
+  line-height: 50px; /*Interligne*/
+  font-size: 1.4em;
+  display: inline-block;
+  margin-right: -4px; /*Enleve la marge automatique*/
+      
 }
-.sous-menu
-{
-	border: solid black 1px;
-	display: none;
+.nav a {
+  text-decoration: none; /*Enleve le soulignement (url)*/
+  color: #fff;
+  display: block; /* Prend tte la largeur disponible*/
+  padding-left: 20px; /* Ajoute une indentation au sous menu */ 
+  transition: .3s background-color; /*Temps d'apparition de la couleur de surlignage*/
+  
 }
-.sous-menu li
-{
-	
-} 
+
+.nav a:hover {
+  background-color: rgb(100,0,0); /* Couleur de surlignage*/
+}
+
+.nav li li {
+  font-size: .8em; /*Taille du texte sous-onglets*/
+}
+
+.nav > ul > li {
+  text-align: center; /* Centre le texte des onglets */ 
+}
+
+.nav > ul > li > a {
+  padding-left: 0; /*premet reset le padding de la ligne 32 (nav a)*/
+}
+
+/* Sub Menus */
+.nav li ul {
+  position: absolute; /*Se positionne au niveau du parent*/
+  display: none; /* Déaffiche sauter les sous-onglets */ 
+  width: inherit; /*Hérite de la taille parentale*/
+}
+
+.nav li:hover ul {
+  display: block; /*Réaffiche des blocks lors du surlignage d'un onlget*/ 
+}
+
+/* bloque la taille des sous-onglets
+.nav li ul li {
+  display: block;
+}*/
+/* Si on souhaite avoir un onglet particulier utiliser la classe active
+.nav a.active {
+  background-color: #aaa;
+  color: #444;
+  cursor: default;
+}*/

@@ -6,7 +6,7 @@ body {
 /* Menu */
 .nav ul {
   list-style: none;
-  background-color: #444; /*couleur du menu*/
+  background-color: rgb(155,0,0); /*couleur du menu*/
   text-align: center;
   padding: 0;
   margin: 0;
