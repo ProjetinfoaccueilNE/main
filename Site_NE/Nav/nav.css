@@ -1,0 +1,26 @@
+#menu_nav
+{
+	background-color: rgba(150,150,150,0.2);
+}
+.menu
+{
+  border: solid blue 1px;
+	display: table;
+	width: 100%;
+}
+.menu li
+{
+	width:20%;
+	display: table-cell;
+	text-align: center;
+	border: solid red 1px;
+}
+.sous-menu
+{
+	border: solid black 1px;
+	display: none;
+}
+.sous-menu li
+{
+	
+} 
