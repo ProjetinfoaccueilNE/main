@@ -1,4 +1,4 @@
-﻿Projet WEB
+Projet WEB
 -> Accueil NE
 
 
@@ -13,7 +13,7 @@ ACCUEIL
 
 
 Bienvenue, félicitations.
-Photo/Vidéo
+Photo/Vidéoss
 
 
 I - ÉCOLE (Laure)
