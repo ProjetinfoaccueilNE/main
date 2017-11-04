@@ -1,0 +1,53 @@
+/* Menu */
+.nav ul {
+  background-color: rgb(190,37,24); /*couleur du menu*/
+  padding: 0;
+  margin: 0px 0px 2% 0px;
+  text-align: center;
+}
+
+/* Onglets principaux et sous-onglets*/
+.nav li {
+   /*Justification*/
+  width: 200px; /*Taille des onglets*/
+  height: 50px; /*Hauteur du menu*/
+  line-height: 50px; /*Interligne*/
+  font-size: 1.4em;
+  display: inline-block;      
+  text-align: left;
+}
+
+.nav a {
+  text-decoration: none; /*Enleve le soulignement (url)*/
+  color: #fff;
+  display: block; /* Prend tte la largeur disponible*/
+  padding-left: 20px; /* Ajoute une indentation au sous menu */ 
+  transition: .3s background-color; /*Temps d'apparition de la couleur de surlignage*/
+}
+
+.nav a:hover {
+  background-color: rgb(150,37,24); /* Couleur de surlignage*/
+}
+
+.nav li li {
+  font-size: .8em; /*Taille du texte sous-onglets*/
+}
+
+.nav > ul > li {
+  text-align: center; /* Centre le texte des onglets */ 
+}
+
+.nav > ul > li > a {
+  padding-left: 10px; /*premet reset le padding de la ligne 32 (nav a)*/
+}
+
+/* Sub Menus */
+.nav li ul {
+  position: absolute; /*Se positionne au niveau du parent*/
+  display: none; /* Déaffiche les sous-onglets */ 
+  width: inherit; /*Hérite de la taille parentale*/
+}
+
+.nav li:hover ul {
+  display: block; /*Réaffiche des blocks lors du surlignage d'un onlget*/ 
+}
