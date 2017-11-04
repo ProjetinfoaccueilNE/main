@@ -51,3 +51,25 @@
 .nav li:hover ul {
   display: block; /*Réaffiche des blocks lors du surlignage d'un onlget*/ 
 }
+
+/**** Responsive Design ****/
+@media only screen and (max-width: 1020px) {
+  .nav li {
+    width: 180px;
+    font-size: 1.4em;
+  }
+}
+
+@media only screen and (max-width: 920px) {
+  .nav li {
+    width: 150px;
+    font-size: 1.2em;
+  }
+}
+
+@media only screen and (max-width: 770px) {
+  .nav li {
+    width: 150px;
+    font-size: 1.2em;
+  }
+}

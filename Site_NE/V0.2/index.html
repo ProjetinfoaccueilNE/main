@@ -3,7 +3,8 @@
 <html lang="fr">
 
     <head>
-        <meta charset="utf-8" />
+        <meta charset="utf-8" />       
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" type="text/css" href="style.css">
         <link rel="stylesheet" type="text/css" href="nav_vert.css">
         <link rel="stylesheet" type="text/css" href="nav_hor.css">
@@ -11,9 +12,13 @@
     </head>
 
     <header>
-        <a id="logo" href="index.html"><img src="images/logo_insa.jpg" alt="logo" title="Logo de l'INSA Toulouse" /></a>
-        <h1 id="titre"> Site d'accueil des Nouveaux Entrants</h1>
-        <p id="bandeau"><a href="page_accueil.html">Accueil</a> | <a href="page_a_propos.html">À propos</a> | <a href="page_aide.html">Aide</a></p>    
+        <div class="row">
+            <a id="logo" href="index.html" class="col-4"><img src="images/logo_insa.jpg" alt="logo" title="Logo de l'INSA Toulouse" /></a>
+            <h1 id="titre" class="col-8"> Site d'accueil des Nouveaux Entrants </h1>
+        </div>
+        <div class="row">
+            <p id="bandeau" class="col-11"><a href="page_accueil.html">Accueil</a> | <a href="page_a_propos.html">À propos</a> | <a href="page_aide.html">Aide</a></p>  
+        </div>  
     </header>
 
     <body>
@@ -71,62 +76,8 @@
                 </ul>
             </div>
         </nav> 
-
-    	<div id="corps">
-           <section id="menu_nav">
-                <ul>
-                    <li><a href="#" onclick="deroule(menu1)">L'INSA</a>
-                        <ul id="menu1">
-                            <li><a href="#">Plan</a></li>
-                            <li><a href="#">Comment venir</a></li>
-                            <li><a href="#">Comment manger</a></li>
-                            <li><a href="#">Amicale</a></li>
-                            <li><a href="#">Sports</a></li>
-                            <li><a href="#">Vie associative</a></li>
-                        </ul>
-                    </li>
-
-                    <li><a href="#" onclick="deroule(menu2)">Vie associative</a>
-                        <ul id="menu2">
-                            <li><a href="#">Plan pratique</a></li>
-                            <li><a href="#">Transports</a></li>
-                            <li><a href="#">Logement</a></li>
-                            <li><a href="#">Faire ses courses</a></li>
-                            <li><a href="#">Distributeurs</a></li>
-                            <li><a href="#">Station essence</a></li>
-                        </ul>
-                    </li>
-
-                    <li><a href="#"  onclick="deroule(menu3)">Ville</a>
-                        <ul id="menu3">
-                            <li><a href="#">Plan pratique</a></li>
-                            <li><a href="#">Culture</a></li>
-                            <li><a href="#">Sorties nocturnes</a></li>
-                            <li><a href="#">Gastronomie</a></li>
-                            <li><a href="#">Sports</a></li>
-                        </ul>
-                    </li>
-
-                    <li><a href="#"  onclick="deroule(menu4)">Intégration</a>
-                        <ul id="menu4">
-                            <li><a href="#">À préparer</a></li>
-                            <li><a href="#">Semaines d’accueil</a></li>
-                            <li><a href="#">Parrainage</a></li>
-                        </ul>
-                    </li>
-
-                    <li><a href="#"  onclick="deroule(menu5)">Contacts</a>
-                        <ul id="menu5">
-                            <li><a href="#">Responsables</a></li>
-                            <li><a href="#">Infirmière/Asistante sociale</a></li>
-                            <li><a href="#">Team One</a></li>
-                            <li><a href="#">Facebook</a></li>
-                        </ul>
-                    </li>
-                </ul>
-            </section>
-
-            <section id="bienvenue">
+        <div id="row">
+            <section class="col-12">
                 <h2>Bienvenue !</h2>
                 <p>Bravo d'avoir été admis à l'INSA, tu vas voir c'est trop bien !</p>
                 <p>
@@ -139,20 +90,6 @@
             </section>
         </div>
 
-        <script type="text/javascript">
-                function deroule(element) {
-                    var menu= [document.getElementById('menu1'),
-                    document.getElementById('menu2'),
-                    document.getElementById('menu3'),
-                    document.getElementById('menu4'),
-                    document.getElementById('menu5'),
-                    ];
-                    for (var i = 0; i < 4; i++) {
-                        menu[i].style.display='none';
-                    }
-                    element.style.display='block';
-                    element.parentNode.style.color='green';
-                }
-        </script>
+        </div>
     </body> 
 </html>
