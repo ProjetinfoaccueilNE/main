@@ -1,0 +1,27 @@
+#svg{
+	width: 100%;
+	height: 100%;
+	float: left;
+}
+
+#svg circle{
+	fill: rgba(140,0,0,1);
+	stroke: #000;
+	stroke-width:1px;
+}
+
+#svg circle:hover{
+	fill: rgba(40,0,0,1);
+	stroke: #000;
+	stroke-width:1px;
+	transition: fill 0.3s
+}
+
+#svg_liste{
+	
+}
+
+#svg_liste .active{
+
+
+}
