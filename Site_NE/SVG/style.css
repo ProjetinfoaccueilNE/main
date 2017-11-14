@@ -1,27 +1,26 @@
-#svg{
-	width: 100%;
-	height: 100%;
-	float: left;
+circle{
+  opacity: 0;
+}
+circle:hover{
+  fill:rgb(140,0,0);
+  opacity: 1;
+  transition :0.3s fill;
 }
 
-#svg circle{
-	fill: rgba(140,0,0,1);
-	stroke: #000;
-	stroke-width:1px;
+.hidden{
+  display:none;
 }
-
-#svg circle:hover{
-	fill: rgba(40,0,0,1);
-	stroke: #000;
-	stroke-width:1px;
-	transition: fill 0.3s
+.active{
+  color: white;
+  background:rgba(0,0,0,.4);
+  border-radius: 3px;
+  width: 100px;
+  height: 100px;
+  text-align: center;
+  text-decoration: none;
+  border-bottom: 3px solid rgba(80,0,0,.8);
+  transition: 1s background,1s border;
 }
 
 #svg_liste{
-	
-}
-
-#svg_liste .active{
-
-
 }
