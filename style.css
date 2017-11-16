@@ -7,12 +7,12 @@ body
     flex-direction:column;
 }
 
+
+
 nav a, nav a:hover, nav a:visited
 {
 	color:white;
 }
-
-
 
 header>#logo
 {
@@ -132,7 +132,7 @@ header p /*Pour modifier l'apparence de la bande de l'en-tête.*/
 
 .contenu
 {
-	border: solid grey 3px;
+	border: solid rgb(190,37,24) 3px;
 	border-radius:15px;
 	padding-left:3%;
 	box-shadow: 1px 1px rgba(180,180,180,0.7);
@@ -153,34 +153,14 @@ header p /*Pour modifier l'apparence de la bande de l'en-tête.*/
 	font-weight:bold;
 }
 
+.contenu ul ul 
+{
+	list-style:none;
+}
+
 #content>#matière
 {
 	align-self:center;
-}
-
-#barre_gauche
-{
-	position:fixed;
-	left:1.5%;
-	border:solid #635B5B;
-	border-radius:15px;
-	flex-grow:1;
-	padding:0.5%;
-	margin-left:0.8%;
-	display:column;
-	width:135px;
-}
-
-#barre_gauche .partie
-{
-
-	font-size:1.2em;
-	font-weight:bold;
-}
-
-#barre_gauche a:hover
-{
-	font-weight:bold;
 }
 
 #matière
@@ -202,14 +182,21 @@ header p /*Pour modifier l'apparence de la bande de l'en-tête.*/
     padding-left: 20px; /* pour éviter la superposition du contenu */
 }
 
-#menu_nav a 
+#menu_nav h1
+{
+	color:black;
+	text-align:center;
+}
+
+#menu_nav a
 {
 	transition: .3s text-decoration;
-	color:white;
+	color:black;
 }
 
 #menu_nav a:hover {
-  text-decoration: underline; /* Couleur de surlignage*/
+  font-weight:none;
+  text-decoration:underline; 
 }
 
 #menu_nav:nth-child(1)
@@ -219,7 +206,7 @@ header p /*Pour modifier l'apparence de la bande de l'en-tête.*/
 	border-radius: 15px;
 	font-size: 1.4em;
 	line-height: 27px;
-	background-color: grey;
+	background-color:white;
 }
 
 #menu_nav ul>li>ul
