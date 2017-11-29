@@ -38,5 +38,13 @@ map.addEventListener('mousehover', function () {
 	activeArea()
 })
 
+var mapOnly = document.querySelector('#e1_map');
 
+mapOnly.addEventListener('mouseleave', function () {
+	links.querySelectorAll('.active').forEach(function(item) {
+		item.classList.remove('active')
+		item.classList.add('hidden')
+
+	})
+})
 var balise = document.querySelectorAll('.balise')
