@@ -27,8 +27,8 @@ circle.forEach( function(path) {
 	{
 		var id = this.id.replace('circle_','')
 
-		var posX = e.clientX;
-		var posY = e.clientY;
+		var posX = e.clientX
+		var posY = e.clientY
 		console.log(posX,posY)
 		activeArea(id,posX,posY)
 	})
