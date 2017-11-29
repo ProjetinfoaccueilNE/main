@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="1390px" height="810px" viewBox="0 0 1390 810" preserveAspectRatio="xMidYMid meet" >
+	<rect id="svgEditorBackground" x="0" y="0" width="1390" height="810" style="fill: none; stroke: none;"/>
+	<image x="229" y="94" width="1001" height="607" id="e1_map" preserveAspectRatio="xMidYMid meet" xlink:href="http://maps.googleapis.com/maps/api/staticmap?center=43.563525,1.468714&amp;zoom=14&amp;size=1001x607&amp;maptype=roadmap&amp;sensor=false" style="stroke:black;stroke-width:1px;fill:khaki;" /><g id="g_e3_svg"/>
+	<circle class="balise" id="e5_circle" cx="868" cy="362.5" style="fill:khaki;stroke:black;stroke-width:1px;" r="8.60233" />
+	<circle class="balise" id="e2_circle" cx="712" cy="291.5" style="fill:khaki;stroke:black;stroke-width:1px;" r="8.60233" />
+	<circle class="balise" id="e1_circle" cx="791" cy="365.5" style="fill:khaki;stroke:black;stroke-width:1px;" r="8.60233" />
+</svg>
