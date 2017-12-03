@@ -19,8 +19,5 @@ circle:hover{
   text-align: center;
   text-decoration: none;
   border-bottom: 3px solid rgba(80,0,0,.8);
-  transition: 1s background,1s border;
 }
 
-#svg_liste{
-}

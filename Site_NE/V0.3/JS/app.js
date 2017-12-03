@@ -1,3 +1,16 @@
+function deroule(element) {
+    var menu= [document.getElementById('menu1'),
+    document.getElementById('menu2'),
+    document.getElementById('menu3'),
+    document.getElementById('menu4'),
+    document.getElementById('menu5'),
+    ];
+    for (var i = 0; i < 5; i++) {
+        menu[i].style.display='none';
+    }
+    element.style.display='block';
+}
+
 /*Variable contenant la map */
 var map = document.querySelector('#map');
 /*Variable contenant les cercles*/
