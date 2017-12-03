@@ -1,41 +1,16 @@
-/* Border-Box */
-/*https://www.w3schools.com/css/css_rwd_grid.asp*/
-
-*{
-	box-sizing: border-box;
-}
-
-.row::after {
-    content: "";
-    clear: both;
-    display: table;
-}
-[class*="col-"] {
-	float: left;
-	
-}
-.col-1 {width: 8.33%;}
-.col-2 {width: 16.66%;}
-.col-3 {width: 25%;}
-.col-4 {width: 33.33%;}
-.col-5 {width: 41.66%;}
-.col-6 {width: 50%;}
-.col-7 {width: 58.33%;}
-.col-8 {width: 66.66%;}
-.col-9 {width: 75%;}
-.col-10 {width: 83.33%;}
-.col-11 {width: 91.66%;}
-.col-12 {width: 100%;}
-
 body
 {
     font-family: 'Oswald', sans-serif;
 	margin: 0; 
   	padding: 0;
+    display:flex;
+    flex-direction:column;
 }
+
 
 nav a, nav a:hover, nav a:visited
 {
+	color:white;
 }
 
 body ul li
@@ -43,13 +18,16 @@ body ul li
 	list-style:none;
 }
 
-header>div>#logo
+header>#logo
 {
-	margin:1.5% 0 0 0%;
-	text-align: center;
+	position:absolute;
+	left:0%;
+	top:6.5%;
+	margin-left:3%;
+	padding:0px;
 }
 
-header>div>#titre /*Pour modifier l'apparence du titre du site.*/
+header>#titre /*Pour modifier l'apparence du titre du site.*/
 {
 
 	color:rgb(190,37,24);
@@ -57,16 +35,18 @@ header>div>#titre /*Pour modifier l'apparence du titre du site.*/
 	text-align:center;
 	font-weight:bold;
 	text-shadow:1px 1px 0.5px #EB9898;
-	margin: 1.5% 0 0 0;
-	height: auto;
+	margin:0%;
+	padding-top:3%;
 }
 
-header>div>#bandeau
+header>#bandeau
 {
-	margin: 0 0 0.3% 0;
-	text-align: right;
+	width:90%;
+	height:15px;
+	text-align:right;
+	margin:0px;
+	padding:1%;
 }
-
 #bandeau a:hover
 {
 	font-weight: bold;
@@ -92,15 +72,70 @@ header a:hover
 header p /*Pour modifier l'apparence de la bande de l'en-tête.*/
 {
 	text-decoration:none;
+	text-align:right;
 	font-style:normal;
 	color:#4D585C;
-	margin: 0 0 0.2% 0;
-	text-align: right;
 }
 
-/**************** Page d'accueil ******************/
+/* Menu */
+.nav ul {
+  list-style: none;
+  background-color: rgb(190,37,24); /*couleur du menu*/
+  text-align: center;
+  padding: 0;
+  margin: 0;
+  margin-bottom: 2%;
+}
 
-section
+/* Onglets principaux et sous-onglets*/
+.nav li {
+  font-size: 1.2em;
+  text-align: left; /*Justification*/
+  width: 200px; /*Taille des onglets*/
+  height: 50px; /*Hauteur du menu*/
+  line-height: 50px; /*Interligne*/
+  font-size: 1.4em;
+  display: inline-block;      
+}
+
+.nav a {
+  text-decoration: none; /*Enleve le soulignement (url)*/
+  color: #fff;
+  display: block; /* Prend tte la largeur disponible*/
+  padding-left: 20px; /* Ajoute une indentation au sous menu */ 
+  transition: .3s background-color; /*Temps d'apparition de la couleur de surlignage*/
+}
+
+.nav a:hover {
+  background-color: rgb(150,37,24); /* Couleur de surlignage*/
+}
+
+.nav li li {
+  font-size: .8em; /*Taille du texte sous-onglets*/
+}
+
+.nav > ul > li {
+  text-align: center; /* Centre le texte des onglets */ 
+}
+
+.nav > ul > li > a {
+  padding-left: 10px; /*premet reset le padding de la ligne 32 (nav a)*/
+}
+
+/* Sub Menus */
+.nav li ul {
+  position: absolute; /*Se positionne au niveau du parent*/
+  display: none; /* Déaffiche les sous-onglets */ 
+  width: inherit; /*Hérite de la taille parentale*/
+}
+
+.nav li:hover ul {
+  display: block; /*Réaffiche des blocks lors du surlignage d'un onlget*/ 
+}
+
+/* Page d'accueil */
+
+#bienvenue
 {
 	border: solid grey 3px;
 	border-radius:15px;
@@ -113,39 +148,95 @@ section
 	padding-right: 2%;
 }
 
-@media only screen and (max-width: 1280px) {
-	header>div>#logo
-	{
-		padding:0 0 0 2.5%;
-		margin: 1.5% 0 0 0;
-		text-align: left;	
-	}
+/* Partie "content" */
+
+#content
+{
+	margin-top:2%;
+	display:flex;
+	flex-direction:row;
+	flex-wrap:nowrap;
+	justify-content:space-around;
+	align-items:flex-start;
 }
-@media only screen and (max-width: 980px) {
-	header>div>#titre
-	{
-		font-size: 2.5em;
-		margin-bottom: 0.5%;
-	}
-	header>div>#logo
-	{
-		margin: 2.5% 0 0 0;
-	}
-	header>div>#bandeau
-	{
-		display: none;
-	}
+
+#content>#matière
+{
+	align-self:center;
 }
-@media only screen and (max-width: 640px) {
-	header>div>#logo
-	{
-		margin: 2.5% 0 0 0;
-		width: auto;
-		padding-left: 10%;
-	}
-	header>div>#titre
-	{
-		font-size: 2em;
-		width: auto;
-	}
+
+#barre_gauche
+{
+	position:fixed;
+	left:1.5%;
+	border:solid #635B5B;
+	border-radius:15px;
+	flex-grow:1;
+	padding:0.5%;
+	margin-left:0.8%;
+	display:column;
+	width:135px;
 }
+
+#barre_gauche .partie
+{
+
+	font-size:1.2em;
+	font-weight:bold;
+}
+
+#barre_gauche a:hover
+{
+	font-weight:bold;
+}
+
+#matière
+{
+	flex-grow:10;
+	border:solid #635B5B;
+	border-radius:15px;
+	margin-left:20%;
+	margin-right:7%;
+	padding:1%;
+}
+#menu_nav ul
+{
+	list-style-type: none; /* on annule la puce par défaut */
+    background-image: url(image.png); /* on affiche l'image souhaitée */
+    background-repeat: no-repeat; /* on annule la répétition par défaut */
+    background-position: left center; /* on positionne où l'on veut */
+    padding-left: 20px; /* pour éviter la superposition du contenu */
+}
+#menu_nav a 
+{
+	transition: .3s text-decoration;
+}
+#menu_nav a:hover {
+  text-decoration: underline; /* Couleur de surlignage*/
+}
+
+#menu_nav:nth-child(1)
+{
+	border: solid grey 3px;
+	padding-right: 2%;
+	border-radius: 15px;
+	font-size: 1.4em;
+	line-height: 27px;
+}
+
+#menu_nav ul>li>ul
+{
+	display: none;
+}
+#menu_nav li:hover ul
+{
+}
+
+
+#corps
+{
+	display: flex;
+	justify-content: space-around;
+}
+
+
