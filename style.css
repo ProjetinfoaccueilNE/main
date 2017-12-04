@@ -1,0 +1,226 @@
+body
+{
+    font-family: 'Oswald', sans-serif;
+	margin: 0; 
+  	padding: 0;
+    display:flex;
+    flex-direction:column;
+}
+
+
+
+nav a, nav a:hover, nav a:visited
+{
+	color:white;
+}
+
+header>#logo
+{
+	position:absolute;
+	left:0%;
+	top:6.5%;
+	left:15px; /* C'est plus joli avec un petit décalage par rapport au bord gauche.*/
+	padding:0px;
+}
+
+header>#titre /*Pour modifier l'apparence du titre du site.*/
+{
+
+	color:rgb(190,37,24);
+	font-size:3em;
+	text-align:center;
+	font-weight:bold;
+	text-shadow:1px 1px 0.5px #EB9898;
+	margin-top:3%;
+	margin-left:320px; /* Correspond à la largeur du logo + la marge.*/
+}
+
+header>#bandeau
+{
+	width:90%;
+	height:15px;
+	text-align:right;
+	margin:0px;
+	padding:1%;
+}
+#bandeau a:hover
+{
+	font-weight: bold;
+}
+
+/*Enlève le soulignement des liens, et les mets en gras quand on les survole.*/
+a, a:hover, a:visited
+{
+	text-decoration:none;
+}
+
+/*Modifie la couleur des liens dans l'en-tête.*/
+header a, header a:hover, header a:visited
+{
+	color:#4D585C;
+}
+
+header a:hover
+{
+	text-decoration:underline;
+}
+
+header p /*Pour modifier l'apparence de la bande de l'en-tête.*/
+{
+	text-decoration:none;
+	text-align:right;
+	font-style:normal;
+	color:#4D585C;
+}
+
+/* Menu */
+.nav ul {
+  list-style: none;
+  background-color: rgb(190,37,24); /*couleur du menu*/
+  text-align: center;
+  padding: 0;
+  margin: 0;
+  margin-bottom: 2%;
+}
+
+/* Onglets principaux et sous-onglets*/
+.nav li {
+  font-size: 1.2em;
+  text-align: left; /*Justification*/
+  width: 200px; /*Taille des onglets*/
+  height: 50px; /*Hauteur du menu*/
+  line-height: 50px; /*Interligne*/
+  font-size: 1.4em;
+  display: inline-block;      
+}
+
+.nav a {
+  text-decoration: none; /*Enleve le soulignement (url)*/
+  color: #fff;
+  display: block; /* Prend tte la largeur disponible*/
+  padding-left: 20px; /* Ajoute une indentation au sous menu */ 
+  transition: .3s background-color; /*Temps d'apparition de la couleur de surlignage*/
+}
+
+.nav a:hover {
+  background-color: rgb(150,37,24); /* Couleur de surlignage*/
+}
+
+.nav li li {
+  font-size: .8em; /*Taille du texte sous-onglets*/
+}
+
+.nav > ul > li {
+  text-align: center; /* Centre le texte des onglets */ 
+}
+
+.nav > ul > li > a {
+  padding-left: 10px; /*premet reset le padding de la ligne 32 (nav a)*/
+}
+
+/* Sub Menus */
+.nav li ul {
+  position: absolute; /*Se positionne au niveau du parent*/
+  display: none; /* Déaffiche les sous-onglets */ 
+  width: inherit; /*Hérite de la taille parentale*/
+}
+
+.nav li:hover ul {
+  display: block; /*Réaffiche des blocks lors du surlignage d'un onlget*/ 
+}
+
+
+.contenu
+{
+	border: solid rgb(190,37,24) 3px;
+	border-radius:15px;
+	padding-left:3%;
+	box-shadow: 1px 1px rgba(180,180,180,0.7);
+	background-color: rgb(240,240,240);
+	padding-top: 1%;
+	width: 58%;
+	text-align: justify;
+	padding-right: 3%;
+}
+
+.contenu a, .contenu a:hover 
+{
+	color:black;
+}
+
+.contenu a:hover
+{
+	font-weight:bold;
+}
+
+.contenu ul ul 
+{
+	list-style:none;
+}
+
+#content>#matière
+{
+	align-self:center;
+}
+
+#matière
+{
+	flex-grow:10;
+	border:solid #635B5B;
+	border-radius:15px;
+	margin-left:20%;
+	margin-right:7%;
+	padding:1%;
+}
+
+#menu_nav ul
+{
+	list-style-type: none; /* on annule la puce par défaut */
+    background-image: url(image.png); /* on affiche l'image souhaitée */
+    background-repeat: no-repeat; /* on annule la répétition par défaut */
+    background-position: left center; /* on positionne où l'on veut */
+    padding-left: 20px; /* pour éviter la superposition du contenu */
+}
+
+#menu_nav h1
+{
+	color:black;
+	text-align:center;
+}
+
+#menu_nav a
+{
+	transition: .3s text-decoration;
+	color:black;
+}
+
+#menu_nav a:hover {
+  font-weight:none;
+  text-decoration:underline; 
+}
+
+#menu_nav:nth-child(1)
+{
+	border: solid grey 3px;
+	padding-right: 2%;
+	border-radius: 15px;
+	font-size: 1.4em;
+	line-height: 27px;
+	background-color:white;
+}
+
+#menu_nav ul>li>ul
+{
+	display: none;
+}
+#menu_nav li:hover ul
+{
+}
+
+#corps
+{
+	display: flex;
+	justify-content: space-around;
+}
+
+
