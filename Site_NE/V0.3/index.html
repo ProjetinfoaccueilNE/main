@@ -1,0 +1,164 @@
+<!--Page I.B. : Accéder au campus de l'INSAT -->
+<!DOCTYPE html>
+<html lang="fr">
+
+    <head>
+        <meta charset="utf-8" />       
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" type="text/css" href="style.css">
+        <link rel="stylesheet" type="text/css" href="nav_vert.css">
+        <link rel="stylesheet" type="text/css" href="nav_hor.css">
+        <title>Accueil</title>
+    </head>
+
+    <header>
+        <div class="row">
+            <a id="logo" href="index.html" class="col-4"><img src="images/logo_insa.jpg" alt="logo" title="Logo de l'INSA Toulouse" /></a>
+            <h1 id="titre" class="col-8"> Site d'accueil des Nouveaux Entrants </h1>
+        </div>
+        <div class="row">
+            <p id="bandeau" class="col-11"><a href="page_accueil.html">Accueil</a> | <a href="page_a_propos.html">À propos</a> | <a href="page_aide.html">Aide</a></p>  
+        </div>
+        <script type="text/javascript">
+            function deroule(element) {
+                var menu= [document.getElementById('menu1'),
+                document.getElementById('menu2'),
+                document.getElementById('menu3'),
+                document.getElementById('menu4'),
+                document.getElementById('menu5'),
+                ];
+                for (var i = 0; i < 4; i++) {
+                    menu[i].style.display='none';
+                }
+                element.style.display='block';
+                element.parentNode.style.color='green';
+            }
+        </script>  
+    </header>
+
+    <body>
+        <nav>
+            <div class="nav">
+                <ul>
+                    <li><a>L'INSA</a>
+                        <ul>
+                            <li><a href="#">Plan</a></li>
+                            <li><a href="#">Comment venir</a></li>
+                            <li><a href="#">Comment manger</a></li>
+                            <li><a href="#">Amicale</a></li>
+                            <li><a href="#">Sports</a></li>
+                            <li><a href="#">Vie associative</a></li>
+                        </ul>
+                    </li>
+
+                    <li><a>Vie associative</a>
+                        <ul>
+                            <li><a href="#">Plan pratique</a></li>
+                            <li><a href="#">Transports</a></li>
+                            <li><a href="#">Logement</a></li>
+                            <li><a href="#">Faire ses courses</a></li>
+                            <li><a href="#">Distributeurs</a></li>
+                            <li><a href="#">Station essence</a></li>
+                        </ul>
+                    </li>
+
+                    <li><a>Ville</a>
+                        <ul>
+                            <li><a href="Pages/planPratique.html">Plan pratique</a></li>
+                            <li><a href="#">Culture</a></li>
+                            <li><a href="#">Sorties nocturnes</a></li>
+                            <li><a href="#">Gastronomie</a></li>
+                            <li><a href="#">Sports</a></li>
+                        </ul>
+                    </li>
+
+                    <li><a>Intégration</a>
+                        <ul>
+                            <li><a href="#">À préparer</a></li>
+                            <li><a href="#">Semaines d’accueil</a></li>
+                            <li><a href="#">Parrainage</a></li>
+                        </ul>
+                    </li>
+
+                    <li><a>Contacts</a>
+                        <ul>
+                            <li><a href="#">Responsables</a></li>
+                            <li><a href="#">Infirmière/Asistante sociale</a></li>
+                            <li><a href="#">Team One</a></li>
+                            <li><a href="#">Facebook</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </nav> 
+
+        <section id="menu_nav">
+                <ul>
+                    <li><a href="#" onclick="deroule(menu1)">L'INSA</a>
+                        <ul id="menu1">
+                            <li><a href="#">Plan</a></li>
+                            <li><a href="#">Comment venir</a></li>
+                            <li><a href="#">Comment manger</a></li>
+                            <li><a href="#">Amicale</a></li>
+                            <li><a href="#">Sports</a></li>
+                            <li><a href="#">Vie associative</a></li>
+                        </ul>
+                    </li>
+
+                    <li><a href="#" onclick="deroule(menu2)">Vie associative</a>
+                        <ul id="menu2">
+                            <li><a href="#">Plan pratique</a></li>
+                            <li><a href="#">Transports</a></li>
+                            <li><a href="#">Logement</a></li>
+                            <li><a href="#">Faire ses courses</a></li>
+                            <li><a href="#">Distributeurs</a></li>
+                            <li><a href="#">Station essence</a></li>
+                        </ul>
+                    </li>
+
+                    <li><a href="#"  onclick="deroule(menu3)">Ville</a>
+                        <ul id="menu3">
+                            <li><a href="#">Plan pratique</a></li>
+                            <li><a href="#">Culture</a></li>
+                            <li><a href="#">Sorties nocturnes</a></li>
+                            <li><a href="#">Gastronomie</a></li>
+                            <li><a href="#">Sports</a></li>
+                        </ul>
+                    </li>
+
+                    <li><a href="#"  onclick="deroule(menu4)">Intégration</a>
+                        <ul id="menu4">
+                            <li><a href="#">À préparer</a></li>
+                            <li><a href="#">Semaines d’accueil</a></li>
+                            <li><a href="#">Parrainage</a></li>
+                        </ul>
+                    </li>
+
+                    <li><a href="#"  onclick="deroule(menu5)">Contacts</a>
+                        <ul id="menu5">
+                            <li><a href="#">Responsables</a></li>
+                            <li><a href="#">Infirmière/Asistante sociale</a></li>
+                            <li><a href="#">Team One</a></li>
+                            <li><a href="#">Facebook</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </section>
+
+        <div id="row">
+            <section class="col-12">
+                <h2>Bienvenue !</h2>
+                <p>Bravo d'avoir été admis à l'INSA, tu vas voir c'est trop bien !</p>
+                <p>
+                    Sed (saepe enim redeo ad Scipionem, cuius omnis sermo erat de amicitia) querebatur, quod omnibus in rebus homines diligentiores essent; capras et oves quot quisque haberet, dicere posse, amicos quot haberet, non posse dicere et in illis quidem parandis adhibere curam, in amicis eligendis neglegentis esse nec habere quasi signa quaedam et notas, quibus eos qui ad amicitias essent idonei, iudicarent. Sunt igitur firmi et stabiles et constantes eligendi; cuius generis est magna penuria. Et iudicare difficile est sane nisi expertum; experiendum autem est in ipsa amicitia. Ita praecurrit amicitia iudicium tollitque experiendi potestatem.<br><br><br>
+
+                    Metuentes igitur idem latrones Lycaoniam magna parte campestrem cum se inpares nostris fore congressione stataria documentis frequentibus scirent, tramitibus deviis petivere Pamphyliam diu quidem intactam sed timore populationum et caedium, milite per omnia diffuso propinqua, magnis undique praesidiis conmunitam.<br><br><br>
+
+                    Montius nos tumore inusitato quodam et novo ut rebellis et maiestati recalcitrantes Augustae per haec quae strepit incusat iratus nimirum quod contumacem praefectum, quid rerum ordo postulat ignorare dissimulantem formidine tenus iusserim custodiri.<br><br><br>
+                </p>    
+            </section>
+        </div>
+
+        </div>
+    </body> 
+</html>

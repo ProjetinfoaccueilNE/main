@@ -1,0 +1,151 @@
+/* Border-Box */
+/*https://www.w3schools.com/css/css_rwd_grid.asp*/
+
+*{
+	box-sizing: border-box;
+}
+
+.row::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+[class*="col-"] {
+	float: left;
+	
+}
+.col-1 {width: 8.33%;}
+.col-2 {width: 16.66%;}
+.col-3 {width: 25%;}
+.col-4 {width: 33.33%;}
+.col-5 {width: 41.66%;}
+.col-6 {width: 50%;}
+.col-7 {width: 58.33%;}
+.col-8 {width: 66.66%;}
+.col-9 {width: 75%;}
+.col-10 {width: 83.33%;}
+.col-11 {width: 91.66%;}
+.col-12 {width: 100%;}
+
+body
+{
+    font-family: 'Oswald', sans-serif;
+	margin: 0; 
+  	padding: 0;
+}
+
+nav a, nav a:hover, nav a:visited
+{
+}
+
+body ul li
+{
+	list-style:none;
+}
+
+header>div>#logo
+{
+	margin:1.5% 0 0 0%;
+	text-align: center;
+}
+
+header>div>#titre /*Pour modifier l'apparence du titre du site.*/
+{
+
+	color:rgb(190,37,24);
+	font-size:3em;
+	text-align:center;
+	font-weight:bold;
+	text-shadow:1px 1px 0.5px #EB9898;
+	margin: 1.5% 0 0 0;
+	height: auto;
+}
+
+header>div>#bandeau
+{
+	margin: 0 0 0.3% 0;
+	text-align: right;
+}
+
+#bandeau a:hover
+{
+	font-weight: bold;
+}
+
+/*Enlève le soulignement des liens, et les mets en gras quand on les survole.*/
+a, a:hover, a:visited
+{
+	text-decoration:none;
+}
+
+/*Modifie la couleur des liens dans l'en-tête.*/
+header a, header a:hover, header a:visited
+{
+	color:#4D585C;
+}
+
+header a:hover
+{
+	text-decoration:underline;
+}
+
+header p /*Pour modifier l'apparence de la bande de l'en-tête.*/
+{
+	text-decoration:none;
+	font-style:normal;
+	color:#4D585C;
+	margin: 0 0 0.2% 0;
+	text-align: right;
+}
+
+/**************** Page d'accueil ******************/
+
+section
+{
+	border: solid grey 3px;
+	border-radius:15px;
+	padding-left:3%;
+	box-shadow: 1px 1px rgba(180,180,180,0.7);
+	background-color: rgb(240,240,240);
+	padding-top: 1%;
+	width: 58%;
+	text-align: justify;
+	padding-right: 2%;
+}
+
+@media only screen and (max-width: 1280px) {
+	header>div>#logo
+	{
+		padding:0 0 0 2.5%;
+		margin: 1.5% 0 0 0;
+		text-align: left;	
+	}
+}
+@media only screen and (max-width: 980px) {
+	header>div>#titre
+	{
+		font-size: 2.5em;
+		margin-bottom: 0.5%;
+	}
+	header>div>#logo
+	{
+		margin: 2.5% 0 0 0;
+	}
+	header>div>#bandeau
+	{
+		display: none;
+	}
+}
+@media only screen and (max-width: 640px) {
+	header>div>#logo
+	{
+		margin: 2.5% 0 0 0;
+		width: auto;
+		padding-left: 10%;
+	}
+	header>div>#titre
+	{
+		font-size: 2em;
+		width: auto;
+	}
+}
