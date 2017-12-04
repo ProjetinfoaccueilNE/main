@@ -1,0 +1,23 @@
+circle{
+  opacity: 0;
+}
+circle:hover{
+  fill:rgb(140,0,0);
+  opacity: 1;
+  transition :0.3s fill;
+}
+
+.hidden{
+  display:none;
+}
+.active{
+  color: white;
+  background:rgba(0,0,0,.4);
+  border-radius: 3px;
+  width: 100px;
+  height: 100px;
+  text-align: center;
+  text-decoration: none;
+  border-bottom: 3px solid rgba(80,0,0,.8);
+}
+
