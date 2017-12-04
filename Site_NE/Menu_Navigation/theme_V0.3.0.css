@@ -1,7 +1,0 @@
-/* Je sélectionne les <li> du menu horizontal */
-nav ul #menu_nav{
-  display:inline;
-  padding : 5px;
-  list-style-type:none;
-  
-}
