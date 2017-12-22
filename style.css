@@ -223,4 +223,7 @@ header p /*Pour modifier l'apparence de la bande de l'en-tête.*/
 	justify-content: space-around;
 }
 
-
+.titre4
+{
+	align-self: center;
+}
