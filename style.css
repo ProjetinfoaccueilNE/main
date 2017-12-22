@@ -227,3 +227,17 @@ header p /*Pour modifier l'apparence de la bande de l'en-tête.*/
 {
 	text-align: center;
 }
+.patinoires li
+{
+	text-decoration: underline;
+}
+
+.contenu a
+{
+	color: darkblue; 
+}
+.img_judo
+{
+	width:50%;	
+	height: auto;
+}
