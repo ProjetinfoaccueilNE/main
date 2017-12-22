@@ -1,0 +1,18 @@
+.titre4
+{
+	text-align: center;
+}
+.patinoires li
+{
+	text-decoration: underline;
+}
+
+.contenu a
+{
+	color: darkblue; 
+}
+.img_sport
+{
+	width:40%;	
+	height: auto;
+}
