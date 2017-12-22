@@ -225,5 +225,5 @@ header p /*Pour modifier l'apparence de la bande de l'en-tête.*/
 
 .titre4
 {
-	align-self: center;
+	text-align: center;
 }
