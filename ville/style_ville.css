@@ -13,6 +13,11 @@
 }
 .img_ville
 {
-	width:40%;	
+	width:50%;	
 	height: auto;
+}
+.attention
+{
+	color: darkred;
+	text-decoration: bold;
 }
