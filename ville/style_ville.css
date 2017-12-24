@@ -11,6 +11,7 @@
 {
 	color: darkblue; 
 }
+
 .img_ville
 {
 	width:50%;	
@@ -25,4 +26,8 @@
 {
 	width: 100%;
 	height: auto;
+}
+.bars li
+{
+	text-decoration: underline;
 }
