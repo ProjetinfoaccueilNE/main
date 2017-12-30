@@ -1,0 +1,112 @@
+*
+{
+    color: black;
+    font-family: Georgia, Arial;
+    text-align: justify;
+    border:3px ;
+    font-size: 30;
+}
+
+
+.edtsemaine
+{
+	border-collapse: collapse;
+	border: 1px solid black;
+	margin-left: 60px;
+	margin-right: 60px;
+	margin-top: 30px;
+	margin-bottom: 30px;
+	vertical-align;
+	font-size: 20px;
+	text-align: center;
+}
+
+
+.introp1
+{
+	margin-left: 180px;
+	margin-right: 180px;
+	margin-top: 30px;
+	margin-bottom: 30px;
+	font-size: 50px;
+}
+
+.case11
+{
+	background-color: rgba(91,134,185,0.7);
+}
+.case23
+{
+	background-color: rgba(214,127,202,0.7);
+}
+
+.case12,.case15,.case24
+{
+	background-color: rgba(234,92,232,0.7);
+}
+.case31,.case35
+{
+	background-color: rgba(240,130,95,0.8);
+}
+.case43,.case17
+{
+	background-color: rgba(252,237,53,0.8);
+}
+.case16,.case67,.case57
+{
+	background-color: rgba(216,16,16,0.8);
+}
+.case45
+{
+	background-color: rgba(45,222,112,0.8);
+}
+.case26,.case47
+{
+	background-color: rgba(51,45,222,0.8);
+}
+.case13
+{
+	background-color: rgba(138,80,80,0.8);
+}
+.case33
+{
+	background-color: rgba(69,236,42,0.8);
+}
+.case14
+{
+	background-color: rgba(236,139,43,0.8);
+}
+.case61,.case62,.case64,.case66
+{
+	background-color: rgba(166,44,185,0.8);
+}
+.case41,.case44,.case65
+{
+	background-color: rgba(218,210,220,0.8);
+}
+.case42
+{
+	background-color: rgba(219,51,120,0.8);
+}
+.case63
+{
+	background-color: rgba(25,64,19,0.8);
+}
+.case46
+{
+	background-color: rgba(34,232,208,0.8);
+}
+.case36
+{
+	background-color: rgba(172,231,82,0.8);
+}
+.case37
+{
+	background-color: rgba(238,97,58,0.8);
+}
+
+.texteintro
+{
+	margin-left: 30px;
+}
+
