@@ -1,7 +1,7 @@
 *
 {
     color: black;
-    font-family: Georgia, Arial;
+   	font-family: 'Oswald', sans-serif;
     text-align: justify;
     border:3px ;
     font-size: 30;
@@ -20,6 +20,13 @@
 	font-size: 20px;
 	text-align: center;
 }
+
+.texteintro
+{
+	margin-left: 10px;
+}
+
+
 
 
 .introp1
