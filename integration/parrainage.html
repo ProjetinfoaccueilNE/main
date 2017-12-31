@@ -4,8 +4,8 @@
         <meta charset="utf-8" />
         <link rel="stylesheet" type="text/css" href="../style.css">
         <link rel="stylesheet" type="text/css" href="../menu_deroulant.css">
-        <link rel="stylesheet" type="text/css" href="sa.css">
-        <title>Parrainage</title>
+        <link rel="stylesheet" type="text/css" href="../barre_gauche.css">
+        <title>Accueil</title>
     </head>
 
     <header>
@@ -83,6 +83,59 @@
             <section class="contenu">
                 <h2>Le parrainage est une part très importante de notre rituel, puisqu'elle permet dès le début de se sentir en confiance avec une personne plus âgée ayant suivi la même formation une année auparavant.</h2>
                 	<p>Pour ce faire, on a décidé de rendre cette recherche plus ludique, vous aurez donc un formulaire à remplir. Vous trouverez votre parrain grâce à une photo de lui enfant!</p>
+					<form method="post" action="traitement.php">
+   						 <p>
+        					<label>Votre prénom</label> : <input type="text" name="prenom" id="prenom" required/>
+        					<br>
+        					<label>Votre nom</label> : <input type="text" name="nom" id="nom" required/>
+        					<br>
+        					<label>Votre dâte de naissance</label> : <input type="date" name="datedenaissance" id="datedenaissance" required/>
+        					<br>
+
+        					<label for="po">Dans quel PO êtes-vous ?</label><br />
+       							<select name="po" id="po">
+           							<optgroup label="IMACS">
+
+           								<option value="ae">AE</option>
+           								<option value="imacs">IMACS</option>
+           							</optgroup>
+           							<optgroup label="MIC">
+
+           								<option value="ir" selected>IR</option>
+           								<option value="gmm">GMM</option>
+           							</optgroup>
+           							<optgroup label="ICBE">
+
+           								<option value="gb">GB</option>
+           								<option value="gpe">GPE</option>
+           							</optgroup>
+           							<optgroup label="IC">
+
+           								<option value="gm">GM</option>
+           								<option value="gc">GC</option>
+           							</optgroup>
+           
+       							</select>
+        					<br>
+        					<label>Votre numéro de portable</label> : <input type="number" name="numero" id="numero" required/>
+        					<br>
+        					<label>Ta passion pour la bière sur une échelle de 0 à 10</label> : <input type="range" min="0" max="10" step="1" name="biere" id="biere" required/>
+        					<br>
+        					<label>Ta couleur préférée</label> : <input type="color" name="po" id="po" required/>
+        					<br>
+        					De quel sexe es-tu ?
+        					<input type="radio" name="sexe" id="fille" /> <label for="fille">Fille</label>
+        					<input type="radio" name="sexe" id="garcon" /> <label for="garcon">Garçon</label>
+
+        					<br>
+        					<br>
+        					<input type="submit" value="Envoyer" />
+
+    					</p>
+
+
+					</form>
+
                 
             </section>
         <script src="../javascript/app.js"></script>
