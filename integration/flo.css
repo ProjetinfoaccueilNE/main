@@ -1,7 +1,7 @@
 *
 {
     color: black;
-    font-family: Georgia, Arial; /* si georgia non dispo il prend arial */
+    font-family: 'Oswald', sans-serif; /* si georgia non dispo il prend arial */
     text-align: justify;
     /*background-color: rgba(132,249,196,0.7); couleur en rgb et opacité */
     border:3px ;/*blue double; */
