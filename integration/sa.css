@@ -1,7 +1,7 @@
 *
 {
     color: black;
-    font-family: Georgia, Arial;
+   	font-family: 'Oswald', sans-serif;
     text-align: justify;
     border:3px ;
     font-size: 30;
@@ -12,7 +12,7 @@
 {
 	border-collapse: collapse;
 	border: 1px solid black;
-	margin-left: 60px;
+	margin-left: 6px;
 	margin-right: 60px;
 	margin-top: 30px;
 	margin-bottom: 30px;
@@ -21,14 +21,20 @@
 	text-align: center;
 }
 
+.texteintro
+{
+	margin-left: 10px;
+}
+
+
+
 
 .introp1
 {
-	margin-left: 180px;
-	margin-right: 180px;
+	margin-left: 18px;
 	margin-top: 30px;
 	margin-bottom: 30px;
-	font-size: 50px;
+	font-size: 40px;
 }
 
 .case11

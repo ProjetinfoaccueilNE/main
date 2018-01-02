@@ -1,0 +1,62 @@
+*
+{
+    color: black;
+    font-family: 'Oswald', sans-serif; /* si georgia non dispo il prend arial */
+    text-align: justify;
+    /*background-color: rgba(132,249,196,0.7); couleur en rgb et opacité */
+    border:3px ;/*blue double; */
+}
+
+.bienvenue
+{
+	margin-right: 60 px;
+	margin-left: 13 px;
+	margin-top: 30 px;
+	/* color : #0016ff; couleur en héxadécimal */
+	color :black;
+	font-size: 100px;
+}
+
+
+.couleurblouse
+{
+	border-collapse: collapse;
+	margin-left: 6px;
+	margin-right: 60px;
+	margin-top: 30px;
+	margin-bottom: 30px;
+	vertical-align;
+	font-size: 20px;
+	text-align: center;
+}
+
+
+p
+{
+	margin-left: 10px;
+}
+
+.case11
+{
+	background-color: rgba(242,105,22,0.8);
+}
+.case12
+{
+	background-color: rgba(85,152,83,0.8);
+}
+.case13
+{
+	background-color: rgba(170,37,186,0.8);
+}
+.case21
+{
+	background-color: rgba(230,50,132,0.8);
+}
+.case22
+{
+	background-color: rgba(50,53,230,0.8);
+}
+.case23
+{
+	background-color: rgba(156,164,171,0.8);
+}
