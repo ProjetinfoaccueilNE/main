@@ -38,7 +38,7 @@ map.addEventListener('mousehover', function () {
 	activeArea()
 })
 
-var mapOnly = document.querySelector('#e1_map');
+var mapOnly = document.querySelector('#plan');
 
 mapOnly.addEventListener('mouseleave', function () {
 	links.querySelectorAll('.active').forEach(function(item) {
