@@ -5,6 +5,9 @@ var circle = map.querySelectorAll('#map a')
 /*Variable contenant le text*/
 var links = document.querySelector('#svg_liste')
 
+
+
+
 var activeArea = function (id,posX,posY) {
 	links.querySelectorAll('.active').forEach(function(item) {
 		item.classList.remove('active')
@@ -13,12 +16,13 @@ var activeArea = function (id,posX,posY) {
 	})
 	if(id !== undefined)
 	{
+		var scroll = document.documentElement.scrollTop
 		links.querySelector('#list_'+ id).classList.remove('hidden')
 		links.querySelector('#list_'+ id).classList.add('active')
 		links.querySelector('#list_'+ id).style.position = 'absolute'	
 		console.log(posX,posY)	
-		links.querySelector('#list_'+ id).style.top = posY+(-120)+"px"
-		links.querySelector('#list_'+ id).style.left = posX+(-50)+"px"
+		links.querySelector('#list_'+ id).style.top = posY+(-120)+ scroll +"px"
+		links.querySelector('#list_'+ id).style.left = posX+(-80) +"px"
 	}
 }
 

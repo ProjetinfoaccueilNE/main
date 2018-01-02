@@ -28,3 +28,7 @@ circle:hover{
   width: 150px;
   border: 1px solid black;
 }
+ul
+{
+  list-style: none;
+}
