@@ -32,3 +32,24 @@ ul
 {
   list-style: none;
 }
+
+@media all and (max-width: 1500px) {
+  #menu_nav
+  {
+    display: none;
+  }
+}
+@media all and (max-width: 1200px) {
+  .svg
+  {
+    display: none;
+  }
+}
+
+@media all and (min-width: 1200px) {
+  #hidden_plan
+  {
+    display:none;
+  }
+}
+  
