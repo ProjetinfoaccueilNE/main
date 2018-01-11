@@ -47,3 +47,11 @@ td img
   background-color: #FFF;
   float : left;
 }
+
+p span 
+{
+  display : block;
+  font-size:x-large;
+  margin-right:10px;
+  margin-left : 175px;
+}
