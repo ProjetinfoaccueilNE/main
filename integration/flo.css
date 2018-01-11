@@ -1,0 +1,54 @@
+*
+{
+    color: black;
+    font-family: 'Oswald', sans-serif; /* si georgia non dispo il prend arial */
+    text-align: justify;
+    /*background-color: rgba(132,249,196,0.7); couleur en rgb et opacité */
+    border:3px ;/*blue double; */
+}
+
+.introp1
+{
+	margin-right: 600 px;
+	margin-left: 130 px;
+	margin-top: 30 px;
+	/* color : #0016ff; couleur en héxadécimal */
+	color : rgba(228,38,24,0.8);
+	font-size: 58px;
+}
+
+.introp1:hover /* Quand on survole le titre change de couleur */
+{
+	color:rgb(230,0,112);
+}
+
+
+h1,h2
+{
+	font-weight: bold;
+	display: inline-block;
+}
+
+/*
+.Bienvenue
+{
+	position: absolute;
+	right: 20 px;
+	bottom: 50 px;
+}
+*/
+
+
+.FloYoussefTO
+{
+	float: left;
+}
+p
+{
+	margin-left: 18px;
+	margin-right: 30px;
+	width: 14em;
+}
+
+
+
