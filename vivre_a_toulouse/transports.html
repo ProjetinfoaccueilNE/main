@@ -5,6 +5,7 @@
         <link rel="stylesheet" type="text/css" href="../style.css">
         <link rel="stylesheet" type="text/css" href="../menu_deroulant.css">
         <link rel="stylesheet" type="text/css" href="../barre_gauche.css">
+        <link rel="stylesheet" type="text/css" href="transports.css">
         <title>Accueil</title>
     </head>
 
@@ -84,15 +85,27 @@
             </section>            
 
             <section class="contenu">
-                <h2>Transports</h2>
-                <h3>Train</h3>
-                <h3>Metro</h3>
-                <h3>Tram</h3>
-                <h3>Bus</h3>
-                <h3>Abonnement Tisseo</h3>
-
+                <table>
+                    <caption>Transports</caption>
+                        <thead>
+                            <tr>
+                               <a href="#"><th id="th_a">Train</th></a>
+                               <a href="#"><th id="th_b">Métro</th></a>
+                               <a href="#"><th id="th_c">Tram</th></a>
+                               <a href="#"><th id="th_d">Bus</th></a>
+                               <a href="#"><th id="th_e">Tisséo</th></a>
+                            </tr>
+                            <tr id="text">
+                                <td class="hidden" id="td_a" style="background-color: rgb(0,37,24);">testtttt1a</td>
+                                <td class="hidden" id="td_b" style="background-color: rgb(50,37,24);">testtttt1b</td>
+                                <td class="hidden" id="td_c" style="background-color: rgb(100,37,24);">testtttt1c</td>
+                                <td class="hidden" id="td_d" style="background-color: rgb(150,37,24);">testtttt1d</td>
+                                <td class="hidden" id="td_e" style="background-color: rgb(200,37,24);">testtttt1e</td>
+                            </tr>
+                        </thead> 
+                </table>
                 
             </section>
-        <script src="../javascript/app.js"></script>
+        <script src="../javascript/transports.js"></script>
     </body> 
 </html>
