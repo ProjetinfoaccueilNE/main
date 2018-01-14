@@ -1,0 +1,21 @@
+.bouton_slide
+{
+  background : rgba(120,120,120,0.1);
+  border:solid red;
+}
+
+.image_slide_accueil
+{
+  height: 300px;
+  border:solid black;
+}
+
+#bouton_slide_droite
+{
+  margin-bottom: 100px; 
+}
+
+#bouton_slide_gauche
+{
+  
+}
