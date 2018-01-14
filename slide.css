@@ -26,7 +26,12 @@
   margin-right:-50px;
 }
 
-section
+#slide_accueil
 {
   height : 300px;
+}
+
+.contenu
+{
+  margin-top: 230px;
 }

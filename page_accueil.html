@@ -73,7 +73,18 @@
 
     <body>
     	<div id="corps" style = "flex-direction:column; align-items:center;">
-	        <section class="contenu">
+	        
+            <section id="slide_accueil">
+                <img class="image_slide_accueil" src="images/slide1.jpg">
+                <img class="image_slide_accueil" src="images/slide2.jpg">
+                <img class="image_slide_accueil" src="images/slide3.jpg">
+                <img class="image_slide_accueil" src="images/slide4.jpg">
+
+                <button id="bouton_slide_droite" class="bouton_slide" onclick="defilement(-1)">&#10094;</button>
+                <button id="bouton_slide_gauche" class="bouton_slide" onclick="defilement(+1)">&#10095;</button>
+            </section>
+
+            <section class="contenu">
 	        	<h1>Bienvenue !</h1>
 	        	<p>Bravo pour ton admission à l'INSA, tu verras tu vas t'y plaire !</p>
 	        	<p>
@@ -85,15 +96,7 @@
 
 	        </section>
 
-            <section id="slide_accueil">
-                <img class="image_slide_accueil" src="images/slide1.jpg">
-                <img class="image_slide_accueil" src="images/slide2.jpg">
-                <img class="image_slide_accueil" src="images/slide3.jpg">
-                <img class="image_slide_accueil" src="images/slide4.jpg">
-
-                <button id="bouton_slide_droite" class="bouton_slide" onclick="defilement(-1)">&#10094;</button>
-                <button id="bouton_slide_gauche" class="bouton_slide" onclick="defilement(+1)">&#10095;</button>
-            </section>
+            
 
         </div>
         <script src="javascript/slide_accueil.js"></script>
