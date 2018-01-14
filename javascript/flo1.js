@@ -1,28 +1,39 @@
-
-var message="SEND NUDES"
-for (var i = 0; i < message.length ; i++) {
-	if(i==0)
-		var msg = message[i];
-	else 
-		msg = msg +  message[i];
-	console.log(msg)
-}
-
-
 var slideIndex = 1;
-showDivs(slideIndex);
+automatique();
 
-function plusDivs(n) {
-    showDivs(slideIndex += n);
+function defilement(n) {
+    affichage(slideIndex += n);
 }
 
-function showDivs(n) {
+// Change l'image affichée toutes les 2 secondes
+function automatique() {
     var i;
     var x = document.getElementsByClassName("blouse");
-    if (n > x.length) {slideIndex = 1} 
-    if (n < 1) {slideIndex = x.length} ;
+
+    // Cache toutes les images 
+    for (i = 0; i < x.length; i++) {
+      x[i].style.display = "none"; 
+    }
+
+    slideIndex++; // Incrémentation de l'index
+
+    if (slideIndex > x.length) {slideIndex = 1} // Si on passe de la dernière à la première image
+    x[slideIndex-1].style.display = "block"; // Affiche la bonne image
+
+    setTimeout(automatique, 2000);
+}
+
+// Affiche seulement l'image ayant l'index appelé
+function affichage(n) {
+    var i;
+    var x = document.getElementsByClassName("blouse");
+    if (n > x.length) {slideIndex = 1}; // Si on passe de la dernière à la première image
+    if (n < 1) {slideIndex = x.length}; // Si on passe de la première à la dernière image
+
+    // Cache toutes les images
     for (i = 0; i < x.length; i++) {
         x[i].style.display = "none"; 
     }
-    x[slideIndex-1].style.display = "block"; 
+
+    x[slideIndex-1].style.display = "block"; // Affiche la bonne image
 }
