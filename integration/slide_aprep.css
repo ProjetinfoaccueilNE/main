@@ -7,26 +7,21 @@
   font-size:30px;
 }
 
-.image_slide_accueil
+.blouse
 {
   margin-top:10px;
   height: 500px;
   width: 890px;
 }
 
-#bouton_slide_droite
+#bouton_droit
 {
   float:left;
   margin-left:-50px;
 }
 
-#bouton_slide_gauche
+#bouton_gauche
 {
   float:right;
   margin-right:-50px;
-}
-
-section
-{
-  height : 300px;
 }
