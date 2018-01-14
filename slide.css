@@ -1,17 +1,17 @@
 .bouton_slide
 {
   background : white;
-  border:solid red;
-  margin-top:-170px;
+  border : white;
+  margin-top:-255px;
   height:50px;
-  font-size:25px;
+  font-size:30px;
 }
 
 .image_slide_accueil
 {
-  height: 400px;
-  width: 400px;
-  border:solid black;
+  margin-top:10px;
+  height: 500px;
+  width: 890px;
 }
 
 #bouton_slide_droite
@@ -28,7 +28,6 @@
 
 section
 {
-  border:solid yellow;
   height : 300px;
 }
 
