@@ -5,6 +5,7 @@
         <link rel="stylesheet" type="text/css" href="../style.css">
         <link rel="stylesheet" type="text/css" href="../menu_deroulant.css">
         <link rel="stylesheet" type="text/css" href="../barre_gauche.css">
+        <link rel="stylesheet" type="text/css" href="sa.css">
         <title>Parrainage</title>
     </head>
 
@@ -81,10 +82,11 @@
             </section>            
 
             <section class="contenu">
-                <h2>Le parrainage est une part très importante de notre rituel, puisqu'elle permet dès le début de se sentir en confiance avec une personne plus âgée ayant suivi la même formation une année auparavant.</h2>
-                	<p>Pour ce faire, on a décidé de rendre cette recherche plus ludique, vous aurez donc un formulaire à remplir. Vous trouverez votre parrain grâce à une photo de lui enfant! Voici le formulaire :</p>
-					<form method="post" action="traitement.php">
-   						 <p>
+                <h2 class='intropa'> PARRAINAGE </h2>
+                	<p class="texteintro">Le parrainage est une part très importante de notre rituel, puisqu'elle permet dès le début de se sentir en confiance avec une personne plus âgée ayant suivi la même formation une année auparavant. <br>
+                    Pour ce faire, on a décidé de rendre cette recherche plus ludique, vous aurez donc un formulaire à remplir. Vous trouverez votre parrain grâce à une photo de lui enfant! Voici le formulaire :</p>
+					<form method="post" action="parrainge.html">
+   						 <p class=questionnaire>
         					<label>Votre prénom</label> : <input type="text" name="prenom" id="prenom" required/>
         					<br>
         					<label>Votre nom</label> : <input type="text" name="nom" id="nom" required/>
@@ -119,7 +121,7 @@
         					<br>
         					<label>Votre numéro de portable</label> : <input type="tel" name="numero" id="numero" required/>
         					<br>
-        					<label>Ta passion pour la bière sur une échelle de 0 à 10</label> : <input type="range" min="0" max="10" step="1" name="biere" id="biere" required/>
+        					<label>Ta passion pour le volley-ball sur une échelle de 0 à 10</label> : <input type="range" min="0" max="10" step="1" name="biere" id="biere" required/>
         					<br>
         					<label>Ta couleur préférée</label> : <input type="color" name="po" id="po" required/>
         					<br>
