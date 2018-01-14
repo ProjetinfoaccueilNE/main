@@ -1,21 +1,34 @@
 .bouton_slide
 {
-  background : rgba(120,120,120,0.1);
-  border:solid red;
+  background : white;
+  border : white;
+  margin-top:-255px;
+  height:50px;
+  font-size:30px;
 }
 
 .image_slide_accueil
 {
-  height: 300px;
-  border:solid black;
+  margin-top:10px;
+  height: 500px;
+  width: 890px;
 }
 
 #bouton_slide_droite
 {
-  margin-bottom: 100px; 
+  float:left;
+  margin-left:-50px;
 }
 
 #bouton_slide_gauche
 {
-  
+  float:right;
+  margin-right:-50px;
 }
+
+section
+{
+  height : 300px;
+}
+
+
