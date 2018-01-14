@@ -10,12 +10,17 @@ function defilement(n) {
 function automatique() {
     var i;
     var x = document.getElementsByClassName("image_slide_accueil");
+
+    // Cache toutes les images 
     for (i = 0; i < x.length; i++) {
       x[i].style.display = "none"; 
     }
-    slideIndex++;
+
+    slideIndex++; // Incrémentation de l'index
+
     if (slideIndex > x.length) {slideIndex = 1} 
-    x[slideIndex-1].style.display = "block"; 
+    x[slideIndex-1].style.display = "block"; // Affiche la bonne image
+
     setTimeout(automatique, 2000);
 }
 
@@ -25,10 +30,11 @@ function affichage(n) {
     var x = document.getElementsByClassName("image_slide_accueil");
     if (n > x.length) {slideIndex = 1}; // Si on passe de la dernière à la première image
     if (n < 1) {slideIndex = x.length}; // Si on passe de la première à la dernière image
+
+    // Cache toutes les images
     for (i = 0; i < x.length; i++) {
-        x[i].style.display = "none"; // Cache toutes les images
+        x[i].style.display = "none"; 
     }
+
     x[slideIndex-1].style.display = "block"; // Affiche la bonne image
 }
-
-function 
