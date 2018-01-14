@@ -5,7 +5,7 @@ function defilement(n) {
     affichage(slideIndex += n);
 }
 
-// Change l'image affichée toutes les 2 secondes
+// Change l'image affichée toutes les 4 secondes
 function automatique() {
     var i;
     var x = document.getElementsByClassName("blouse");
@@ -20,7 +20,7 @@ function automatique() {
     if (slideIndex > x.length) {slideIndex = 1} // Si on passe de la dernière à la première image
     x[slideIndex-1].style.display = "block"; // Affiche la bonne image
 
-    setTimeout(automatique, 2000);
+    setTimeout(automatique, 4000);
 }
 
 // Affiche seulement l'image ayant l'index appelé
