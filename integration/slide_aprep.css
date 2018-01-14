@@ -1,27 +1,28 @@
 .bouton_slide
 {
-  background : white;
+  background : rgb(240,240,240);
   border : white;
   margin-top:-255px;
   height:50px;
   font-size:30px;
 }
 
-.blouse
+.image_slide_aprep
 {
-  margin-top:10px;
+  margin-top:30px;
   height: 500px;
-  width: 890px;
+  width:310px;
+  margin-left:400px;
 }
 
-#bouton_droit
+#bouton_slide_droite
 {
   float:left;
-  margin-left:-50px;
+  margin-left:320px;
 }
 
-#bouton_gauche
+#bouton_slide_gauche
 {
   float:right;
-  margin-right:-50px;
+  margin-right:320px;
 }
