@@ -6,6 +6,7 @@
         <link rel="stylesheet" type="text/css" href="style.css">
         <link rel="stylesheet" type="text/css" href="menu_deroulant.css">
         <link rel="stylesheet" type="text/css" href="barre_gauche.css">
+        <link rel="stylesheet" type="text/css" href="slide.css">
         <title>Accueil</title>
     </head>
 
@@ -90,8 +91,8 @@
                 <img class="image_slide_accueil" src="images/train.png">
                 <img class="image_slide_accueil" src="images/metro.png">
 
-                <button class="bouton_slide" onclick="defilement(-1)">&#10094;</button>
-                <button class="bouton_slide" onclick="defilement(+1)">&#10095;</button>
+                <button id="bouton_slide_droite" class="bouton_slide" onclick="defilement(-1)">&#10094;</button>
+                <button id="bouton_slide_gauche" class="bouton_slide" onclick="defilement(+1)">&#10095;</button>
             </section>
 
         </div>
