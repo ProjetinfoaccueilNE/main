@@ -21,21 +21,46 @@
 	text-align: center;
 }
 
-.texteintro
+.texteintro,.p1
+{
+	margin-left: 10px;
+	text-align: justify;
+}
+
+.questionnaire
 {
 	margin-left: 10px;
 }
 
 
-
-
-.introp1
+.introp1,.intropa,.bienvenue
 {
 	margin-left: 18px;
 	margin-top: 30px;
 	margin-bottom: 30px;
 	font-size: 40px;
+	text-align: center;
 }
+
+
+
+
+
+
+.couleurblouse
+{
+	border-collapse: collapse;
+	margin-left: 6px;
+	margin-right: 60px;
+	margin-top: 30px;
+	margin-bottom: 30px;
+	vertical-align;
+	font-size: 20px;
+	text-align: center;
+}
+
+
+
 
 .case11
 {
@@ -111,8 +136,30 @@
 	background-color: rgba(238,97,58,0.8);
 }
 
-.texteintro
-{
-	margin-left: 30px;
-}
 
+
+
+.case110
+{
+	background-color: rgba(242,105,22,0.8);
+}
+.case120
+{
+	background-color: rgba(85,152,83,0.8);
+}
+.case130
+{
+	background-color: rgba(170,37,186,0.8);
+}
+.case210
+{
+	background-color: rgba(230,50,132,0.8);
+}
+.case220
+{
+	background-color: rgba(50,53,230,0.8);
+}
+.case230
+{
+	background-color: rgba(156,164,171,0.8);
+}
