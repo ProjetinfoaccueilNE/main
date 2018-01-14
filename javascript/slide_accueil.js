@@ -1,5 +1,4 @@
 var slideIndex = 1;
-affichage(slideIndex);
 automatique();
 
 function defilement(n) {
